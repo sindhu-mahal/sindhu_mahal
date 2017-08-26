@@ -357,6 +357,7 @@ h1.navbar-brand {
 .slide-caption .caption-content {
     vertical-align: middle;
     display: table-cell;
+    background-color: rgba(0,0,0,0.5);
 }
 
 .caption-content h2 {
