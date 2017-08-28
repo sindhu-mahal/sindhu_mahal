@@ -181,16 +181,16 @@ function init() {
     // Basic options for a simple Google Map
     // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
 
-	    var myLatLng = new google.maps.LatLng(22.402789, 91.822156);
+	    var myLatLng = new google.maps.LatLng(13.037145, 80.138937);
 
 	    var mapOptions = {
-	        zoom: 15,
+	        zoom: 20,
 	        center: myLatLng,
 	        disableDefaultUI: true,
-	        scrollwheel: false,
+	        scrollwheel: true,
 	        navigationControl: true,
-	        mapTypeControl: false,
-	        scaleControl: false,
+	        mapTypeControl: true,
+	        scaleControl: true,
 	        draggable: true,
 
         // How you would like to style the map. 
@@ -223,7 +223,7 @@ function init() {
             featureType: 'road.arterial',
             elementType: 'labels.icon',
             stylers: [{
-                visibility: 'off'
+                visibility: 'on'
             }]
         }, {
             featureType: 'administrative',
@@ -234,12 +234,12 @@ function init() {
         }, {
             featureType: 'transit',
             stylers: [{
-                visibility: 'off'
+                visibility: 'on'
             }]
         }, {
             featureType: 'poi',
             stylers: [{
-                visibility: 'off'
+                visibility: 'on'
             }]
         }]
     };
@@ -253,7 +253,7 @@ function init() {
 
     // Let's also add a marker while we're at it
     var marker = new google.maps.Marker({
-        position: new google.maps.LatLng(22.402789, 91.822156),
+        position: new google.maps.LatLng(13.037145, 80.138937),
         map: map,
 		icon: 'img/icons/map-marker.png',
     });
