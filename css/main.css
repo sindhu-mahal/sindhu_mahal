@@ -1023,6 +1023,8 @@ textarea.form-control {
     background-color: #2E2E2E;
     padding: 70px 0;
     color: #fff;
+	padding-top: 25px;
+	padding-bottom: 25px;
 }
 
 .footer-content {
