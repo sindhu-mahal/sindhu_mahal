@@ -198,7 +198,7 @@ function init() {
         styles: [{
             featureType: 'water',
             stylers: [{
-                color: '#46bcec'
+                color: '#328633'
             }, {
                 visibility: 'on'
             }]
